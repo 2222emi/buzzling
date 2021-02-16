@@ -4,7 +4,8 @@
 
 <%= tweet.name %>
 <%= tweet.text %>
-<%= tweet.image %>
+<div class = "contents_image"style = "background-image: url(<%= tweet.image %>);">
+</div>
 <%= tweet.created_at %>
 
 <% end %>
