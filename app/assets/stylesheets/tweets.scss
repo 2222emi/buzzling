@@ -8,6 +8,9 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0;
 }
 .tweethead{
+  
+  font-family: 'Ubuntu Condensed', sans-serif;
+
   top: 0;
   position: fixed;
   width: 100%;
@@ -22,6 +25,7 @@ h1,h2,h3,h4,h5,h6,p{
   padding-top: 15px;
 }
 body{
+  
   background-color: #303841;
   color: #ffffff;
 }
@@ -58,7 +62,7 @@ left: 480px;
 }
 .tweettext{
   top: 100px;
-  background-color: #303841;
+  background-color: #303841ce;
   border-radius: 15px;
   position: absolute;
   padding: 10px;
