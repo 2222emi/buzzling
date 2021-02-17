@@ -1,11 +1,23 @@
-<h1>hello</h1>
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <div class = "tweethead">
+  <div class = "tweetheadh1">Buzzling</div>
+  </div>
+ </head>
+ <body>
+ <div class = "tweetbody_parent">
+  <% @tweets.each do |tweet| %>
+  <div class = "tweetbody">
 
-<% @tweets.each do |tweet| %>
-
-<%= tweet.name %>
-<%= tweet.text %>
-<div class = "contents_image"style = "background-image: url(<%= tweet.image %>);">
-</div>
-<%= tweet.created_at %>
+  <div class = "tweetname"><%= tweet.name %></div>
+  <div class = "tweetdate"><%= tweet.created_at %></div>
+  <div class = "tweettext"><%= tweet.text %></div>
+  <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
+  </div>
+  </div>
+ 
 
 <% end %>
+ </body>
+</html>
