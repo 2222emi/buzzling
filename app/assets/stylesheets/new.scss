@@ -2,7 +2,7 @@
 .newh1{
   font-family: YuGothic,'Yu Gothic',sans-serif;
   color: #ffffff;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: 43vw;
   font-size: 20px;
 }
@@ -29,21 +29,30 @@ margin-left: 1vw;
 
 .newform{
   margin-left: 33vw;
-  
+  font-family: YuGothic,'Yu Gothic',
+}
+.names p{
+  font-size: small;
+}
+.name{
+  background-color: #eeeeee;
+  color: #212121;
+  width: 300px;
+  height: 4.5vh;
 }
 .text{
-  font-family: YuGothic,'Yu Gothic',sans-serif;
+  
   font-size: small;
 }
 
 .textbox {
-  margin-top: 5px;
+  background-color: #eeeeee;
+  margin-top: 0.02vh;
   border: 1px solid #fff;
   color: #212121;
-  opacity: .7;
   padding: 20px;
   text-align: center;
-  width: 400px;
+  width: 27.5vw;
   height: 20px;
   transition: all .3s;
   -webkit-transition: all .3s;
@@ -67,10 +76,17 @@ color: #ffffff;
 left: 56vw;
 margin-top: 2vh;
 }
+.image{
+  background-color: #eeeeee;
+  color: #212121;
+  width: 30vw;
+  height: 4vh;
+}
 .images{
   position: absolute;
   top: 63vh;
   left: 33vw;
+  
 }
 .images p{
   font-size: small;

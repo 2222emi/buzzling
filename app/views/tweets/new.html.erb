@@ -14,6 +14,10 @@
 
 <div class = "newform">
 <%= form_tag('/tweets', method: :post) do %>
+<div class = "names">
+<p>名前を入力してください</p>
+<input class = "name" type="text" name="name">
+</div>
 <div class = "text">
 <p>文字をいれてください</p>
 <input class = "textbox" type="text" name="text">
