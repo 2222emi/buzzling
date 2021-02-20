@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ 
+ <div class = "tweethead">
+  <div class = "tweetheadh1" link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">Buzzling</div>
+  </div>
+ </head>
+ <body>
+ <div class = "newh1">
+<h1>NEW POST</h1>
+</div>
+
+<div class = "newform">
+<%= form_tag('/tweets', method: :post) do %>
+<div class = "text">
+<p>文字をいれてください</p>
+<input class = "textbox" type="text" name="text">
+</div>
+<div class = "images">
+<p>画像のURLを入力してください</p>
+<input class = "image" type="src" name="image">
+<div>
+<input  class = "submit" type="submit" value="投稿">
+<% end %>
+</div>
+
+<div class = "tweetlink"><%= link_to 'トップページに戻る', '/tweets '%>
+</div>
+
+</body>

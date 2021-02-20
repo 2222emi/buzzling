@@ -1,0 +1,80 @@
+
+.newh1{
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  color: #ffffff;
+  margin-top: 20%;
+  margin-left: 43vw;
+  font-size: 20px;
+}
+
+.tweetlink{
+margin-top: 6vh;
+margin-left: 1vw;
+}
+
+.tweetlink a{
+  display: block;
+  text-decoration: none;
+  color: #757575;
+  width: 150px;
+  height: 40px;
+  margin-left: 20vw;
+  text-align: center;
+  font-size: small;
+  border-radius: 10px;
+  padding-top: 20px;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  
+}
+
+.newform{
+  margin-left: 33vw;
+  
+}
+.text{
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  font-size: small;
+}
+
+.textbox {
+  margin-top: 5px;
+  border: 1px solid #fff;
+  color: #212121;
+  opacity: .7;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  height: 20px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  font-size: 16px;
+  outline: none;
+}
+
+.textbox:focus {
+  width: 500px;
+  outline: none;
+}
+
+.submit{
+  padding: 10px 40px;
+font-size: 1em;
+border-style: none;
+background-color: #ff5722;
+color: #ffffff;
+// position: absolute;
+left: 56vw;
+margin-top: 2vh;
+}
+.images{
+  position: absolute;
+  top: 63vh;
+  left: 33vw;
+}
+.images p{
+  font-size: small;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+
