@@ -2,9 +2,14 @@
 <html>
  <head>
  <div class = "tweethead">
+ <div class = "indexpost">
+<%= link_to 'NEW POST', 'tweets/new'%>
+</div>
   <div class = "tweetheadh1" link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">Buzzling</div>
+
   </div>
+  
  </head>
  <body>
  <div class = "tweetbody_parent">
@@ -17,8 +22,7 @@
   <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
   </div>
   </div>
- 
-
 <% end %>
+
  </body>
 </html>
