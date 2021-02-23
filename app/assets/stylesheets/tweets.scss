@@ -49,11 +49,41 @@ body{
     background: -webkit-linear-gradient(#00acb5d2, #eeeeee);
     background: linear-gradient(to right, #00acb5d2, #eeeeee);
 }
+
+.editindex a{
+  text-decoration: none;
+  color: #757575;
+}
+.editindex{
+  padding-top: 0.5vh;
+  width: 6vw;
+  height: 4vh;
+  border: solid 1px #757575;
+  position: absolute;
+  top: 29vh;
+  left: 35vw;
+}
+.destroyindex a{
+  text-decoration: none;
+  color: #757575;
+}
+.destroyindex{ 
+  padding-top: 0.5vh;
+  width: 6vw;
+  height: 4vh;
+  border: solid 1px #757575;
+  position: absolute;
+  top: 29vh;
+  left: 42vw;
+
+
+}
+
 .tweetname{
   position: absolute;
   font-size: 30px;
-  top: 60px;
-  left: 220px;
+  top: 7vh;
+  left: 23vw;
 }
 .tweetdate{
 position: absolute;
@@ -67,18 +97,18 @@ left: 480px;
   // border-radius: 15px;
   position: absolute;
   padding: 10px;
-  width: 450px;
-  margin-left: 220px;
+  width: 25vw;
+  margin-left: 23vw;
   
 
 }
 .contents_image{
   // border:solid 1px #000;
-  top: 80px;
+  top: 5vh;
   background-size: contain;
   background-repeat: no-repeat;
- height: 180px;
- width: 180px;
+ height: 30vh;
+ width: 20vw;
  margin-left: 20px;
 position: absolute;
 }

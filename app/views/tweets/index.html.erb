@@ -15,11 +15,16 @@
  <div class = "tweetbody_parent">
   <% @tweets.each do |tweet| %>
   <div class = "tweetbody">
-
+  <div class = "editindex">
+  <%= link_to '編集する', "/tweets/#{tweet.id}/edit" %>
+  </div>
+  <div class = "destroyindex">
+  <%= link_to '削除する', "/tweets/#{tweet.id}", method: :delete %>
+  </div>
+    <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
   <div class = "tweetname"><%= tweet.name %></div>
   <div class = "tweetdate"><%= tweet.created_at %></div>
   <div class = "tweettext"><%= tweet.text %></div>
-  <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
   </div>
   </div>
 <% end %>
