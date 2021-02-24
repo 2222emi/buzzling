@@ -1,6 +1,28 @@
 <!DOCTYPE HTML>
 <html>
- <head>
+ <body>
+ <div class = "tweetbody_parent">
+  <% @tweets.each do |tweet| %>
+  <div class = "tweetbody">
+  <div class = "editindex">
+  <%= link_to 'Edit', "/tweets/#{tweet.id}/edit", method: :get %>
+  </div>
+  <div class = "destroyindex">
+  <%= link_to 'Delete', "/tweets/#{tweet.id}", method: :delete %>
+  </div>
+  <div class = "showinndex">
+  <%= link_to 'Learn More', "/tweets/#{tweet.id}", method: :get %>
+  </div>
+  <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
+  <div class = "tweetname"><%= tweet.name %></div>
+  <div class = "tweetdate"><%= tweet.created_at %></div>
+  <div class = "tweettext"><%= simple_format(tweet.text) %></div>
+  </div>
+  </div>
+<% end %>
+
+ </body>
+  <head>
  <div class = "tweethead">
  <div class = "indexpost">
 <%= link_to 'NEW POST', 'tweets/new'%>
@@ -11,23 +33,5 @@
   </div>
   
  </head>
- <body>
- <div class = "tweetbody_parent">
-  <% @tweets.each do |tweet| %>
-  <div class = "tweetbody">
-  <div class = "editindex">
-  <%= link_to '編集する', "/tweets/#{tweet.id}/edit" %>
-  </div>
-  <div class = "destroyindex">
-  <%= link_to '削除する', "/tweets/#{tweet.id}", method: :delete %>
-  </div>
-    <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
-  <div class = "tweetname"><%= tweet.name %></div>
-  <div class = "tweetdate"><%= tweet.created_at %></div>
-  <div class = "tweettext"><%= tweet.text %></div>
-  </div>
-  </div>
-<% end %>
 
- </body>
 </html>

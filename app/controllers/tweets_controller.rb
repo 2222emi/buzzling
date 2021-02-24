@@ -23,13 +23,29 @@ def destroy
 end
 
 def edit
-  tweet = Tweet.find(params[:id])
+  @tweet = Tweet.find(params[:id])
+
 end
 
+def update
+  tweet = Tweet.find(params[:id])
+  tweet.update(update_params)
+
+  redirect_to :root
+end
+
+def show
+  @tweet = Tweet.find(params[:id])
+
+end
 
 end
 
 private
 def tweet_params
   params.permit(:name, :text , :image)
+end
+
+def update_params
+  params.require(:tweet).permit(:name, :text , :image)
 end

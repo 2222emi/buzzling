@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <div class = "showhead">
+  <div class = "showheadh1" link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"><%= link_to 'Buzzling', '/tweets'%></div>
+  </div>
+  <div class = "showparent">
+  <div class = "showtop">
+  <p>詳細画面</p>
+  </div>
+  </div>
+ </head>
+
+ <body>
+  
+  <div class = "showbody_parent">
+  <div class = "show_imageparent">
+    <div class = "show_image"style = "background-image: url(<%= @tweet.image %>);"></div>
+</div>
+
+  <div class = "show_textparent">
+
+  <div class = "showname"><%= @tweet.name %></div>
+  <div class = "showdate"><%= @tweet.created_at %></div>
+  <div class = "showtext"><%= simple_format(@tweet.text) %></div>
+
+  </div>
+  </div>
+
+</body>
