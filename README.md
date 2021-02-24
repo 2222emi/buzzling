@@ -1,24 +1,17 @@
-# README
+    <%= form_tag('/tweets/#{tweet.id}/update', method: :get ) do %>
+      <div class = "upnames">
+      <p>名前を入力してください</p>
+      <input class = "upname" type="text" name="name">
+      </div>
 
-<!-- This README would normally document whatever steps are necessary to get the
-application up and running.
+      <div class = "uptext">
+       <p>文字をいれてください</p>
+      <input class = "uptextbox" type="text" name="text">
+      </div>
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... -->
+      <div class = "upimages">
+      <p>画像のURLを入力してください</p>
+      <input class = "upimage" type="src" name="image">
+      <div>
+   <input  class = "upsubmit" type="submit" value="更新">
+<% end %>
