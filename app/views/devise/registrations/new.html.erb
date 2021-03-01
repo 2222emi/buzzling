@@ -1,3 +1,11 @@
+ <head>
+ <div class = "tweethead">
+  <div class = "tweetheadh1" link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"><%= link_to 'Buzzling', 'http://localhost:3000/tweets'%></div>
+  </div>
+  
+ </head>
+
 <div class = "registrations_new">
 <h2>Sign up</h2>
 
@@ -5,8 +13,8 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   
   <div class="field">
-    <%= f.label :nickname %>
-    <%= f.text_field :nickname, autofocus: true,  %>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname, autofocus: true %>
   </div>
 
   <div class="field">
