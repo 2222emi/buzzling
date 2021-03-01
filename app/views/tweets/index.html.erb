@@ -27,17 +27,21 @@
  <%# <div class = "indexpost">
 <%= link_to 'NEW POST', 'tweets/new'%>
 <%# </div> %> 
-<div class=>
+
 <% if user_signed_in? %>
-  <%= link_to "LogOut", destroy_user_session_path, method: :delete%>
+  <div class = "user_signed"><%= link_to "LogOut", destroy_user_session_path, method: :delete%>
+</div>
    <div class = "indexpost">
 <%= link_to 'NEW POST', 'tweets/new'%>
 </div>
 
   <% else %>
-    <%= link_to "LogIn", user_session_path, method: :post%>
-    <%= link_to "SignUp", new_user_registration_path, method: :get%>
-    
+  <div class = "Log">
+    <div class = "In"><%= link_to "LogIn", user_session_path, method: :post%>
+    </div>
+    <div class = "Up"><%= link_to "SignUp", new_user_registration_path, method: :get%>
+    </div>
+    </div>
   <% end %>
 
 

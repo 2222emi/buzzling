@@ -15,3 +15,9 @@
       <div>
    <input  class = "upsubmit" type="submit" value="更新">
 <% end %>
+
+  <div class="nickname">
+    <%= f.label :nickname %><br />
+    <%= f.nickname_field :nickname, autofocus: true, autocomplete: "nickname" %>
+  </div>
+
