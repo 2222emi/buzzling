@@ -1,15 +1,25 @@
+.bodycoler{
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100vh;
+  background: -moz-linear-gradient(#00acb5d2, #ecdfdf);
+  background: -webkit-linear-gradient(#00acb5d2, #eeeeee);
+  background: linear-gradient(to right, #00acb5d2, #eeeeee);
+
+}
+
 .showhead{
   font-family: 'Ubuntu Condensed', sans-serif;
   top: 0;
   position: fixed;
   width: 100%;
-  height: 100px;
-  background-color: #00adb5
+  height: 14vh;
+  background-color: #3038416c;
 }
 
 .showheadh1{
   margin-top: 5vh;
-  margin-left: 27vw;
+  margin-left: 24vw;
 }
 
 .showheadh1 a{
@@ -22,32 +32,35 @@
   
 }
 .showtop{
-  border:solid 1px #ffffff;
+  // display: none;
+  // border:solid 1px #ffffff;
   position: fixed;
-  top: 1vh;
-  left: 40vw;
-  width: 20vw;
+  top: 4vh;
+  left: 35vw;
+  width: 30vw;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
 
 }
-.showtop p{
+.showtop a{
+  // display: none;
   font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
 }
 
 .showbody_parent{
   display: flex;
-  
+  margin-bottom: 15vh;
 }
 .show_imageparent{
   position: relative;
   font-family: YuGothic,'Yu Gothic',sans-serif;
-  margin-left: 8vw;
-  width: 33.5vw;
-  background-color: #00acb5ec;
-  border-radius: 15px;
-  height: 80vh;
-  margin-top: 20vh;
+  margin-left: 9vw;
+  // width: 33.5vw;
+  // background-color: #00acb5ec;
+  // border-radius: 15px;
+  // height: 80vh;
+  margin-top: 25vh;
   
 }
 
@@ -56,12 +69,12 @@
   font-family: YuGothic,'Yu Gothic',sans-serif;
   font-size: medium;
   text-align: center;
-  margin-left: 5vw;
+  margin-left: 33vw;
   width: 50vw;
   background-color: #00acb5ec;
   border-radius: 15px;
   height: 50vh;
-  margin-top: 50vh;
+  margin-top: 30vh;
 }
 
 
@@ -69,6 +82,7 @@
   position: absolute;
   top: 1vh;
   left: 2vw;
+  font-size: 30px;
 }
 
 .show_image{
@@ -84,9 +98,27 @@
 }
 
 .showdate{
-
+position: absolute;
+top: 45vh;
+left: 16vw;
+font-size: 20px;
 }
 
 .showtext{
+  position: absolute;
+  top: 10vh;
+  left: 9vw;
+  font-size: 25px;
+  // border:solid 1px #000000;
+  width: 35vw;
+  height: 30vh;
 
 }
+
+
+// .show_bottom{
+//   background-color: #03686d69;
+//   width: 100%;
+//   height: 10vh;
+//   bottom: 0;
+// }
