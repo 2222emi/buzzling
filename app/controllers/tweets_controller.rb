@@ -44,7 +44,7 @@ end
 
 private
 def tweet_params
-  params.permit(:name, :text , :image)
+  params.permit(:name, :text , :image).merge(user_id: current_user.id)
 end
 
 def update_params
