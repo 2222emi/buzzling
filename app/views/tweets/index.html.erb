@@ -34,7 +34,9 @@
    <div class = "indexpost">
 <%= link_to 'NEW POST', 'tweets/new'%>
 </div>
-
+<div class = "userpage">
+<%= link_to 'MyPage', "/users/#{current_user.id}" %>
+</div>
   <% else %>
   <div class = "Log">
     <div class = "In"><%= link_to "LogIn", user_session_path, method: :post%>
