@@ -1,0 +1,30 @@
+ <body>
+ 
+  <div class = "user_parent1">
+<% @tweets.each do |tweet| %>
+  <div class = "user_parent">
+  <div class = "user_imageparent">
+<div class = "user_image" style = "background-image: url(<%= tweet.image %>);"></div>
+</div>
+<%# <div class = "user_textparent">
+<div class = "user_datapa"> %>
+<div class = "userdate"><%= tweet.created_at %></div>
+<div class = "usertext"><%= simple_format(tweet.text) %></div>
+<%# </div>
+</div> %>
+</div>
+<% end %>
+
+
+</body>
+<head>
+ <div class = "user_showhead">
+  <div class = "user_showheadh1" link rel="preconnect" href="https://fonts.gstatic.com"> 
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"><%= link_to 'Buzzling', '/tweets'%>
+  </div>
+ </div>
+  <div class = "user_showtop">
+  <%# <p>詳細画面</p> %>
+  <%=  @current_user.nickname %>の投稿
+  </div>
+ </head>
