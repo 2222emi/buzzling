@@ -95,12 +95,17 @@ body{
   font-size: 30px;
   top: 7vh;
   left: 23vw;
+  
+}
+.tweetname a{
+  text-decoration: none;
+  color: #ffffff;
 }
 .tweetdate{
 position: absolute;
 top: 270px;
 left: 480px;
-
+color: #ffffff;
 }
 .tweettext{
   top: 100px;
@@ -110,7 +115,7 @@ left: 480px;
   padding: 10px;
   width: 25vw;
   margin-left: 23vw;
-  
+  color: #ffffff;
 
 }
 .contents_image{
@@ -135,6 +140,23 @@ position: absolute;
   margin-left: 30vw;
   top: 5vh;
   position: absolute;
+}
+
+.userpage{
+
+}
+.userpage a{
+background-color: #ffffff;
+text-align: center;
+padding-top: 1vh;
+width: 8vw;
+height: 4vh;
+font-family: YuGothic,'Yu Gothic',sans-serif;
+text-decoration: none;
+color: #757575;
+margin-left: 20vw;
+top: 5vh;
+position: absolute;
 }
 
 .user_signed a{

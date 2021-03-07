@@ -2,7 +2,8 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
 def index 
-  @tweets = Tweet.all
+  @tweets = Tweet.includes(:user).order("created_at DESC")
+  
 end
  
 def new
@@ -10,7 +11,7 @@ end
 
 def create
   # Tweet.create(text: params[:text] ,image: params[:image] )
-  Tweet.create(tweet_params)
+  Tweet.create(create_params)
   
 end
 
@@ -30,25 +31,25 @@ end
 
 def update
   tweet = Tweet.find(params[:id])
-  tweet.update(update_params)
+  tweet.update(tweet_params)
 
   redirect_to :root
 end
 
 def show
   @tweet = Tweet.find(params[:id])
-
+  
 end
 
 end
 
 private
 def tweet_params
-  params.permit(:name, :text , :image).merge(user_id: current_user.id)
+  params.require(:tweet).permit(:text, :image).merge(user_id: current_user.id)
 end
 
-def update_params
-  params.require(:tweet).permit(:name, :text , :image)
+def create_params
+  params.permit(:text, :image).merge(user_id: current_user.id)
 end
 
 def move_to_index

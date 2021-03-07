@@ -54,7 +54,7 @@
 }
 .show_imageparent{
   position: relative;
-  font-family: YuGothic,'Yu Gothic',sans-serif;
+  
   margin-left: 9vw;
   // width: 33.5vw;
   // background-color: #00acb5ec;
@@ -67,7 +67,6 @@
 .show_textparent{
   position: relative;
   font-family: YuGothic,'Yu Gothic',sans-serif;
-  font-size: medium;
   text-align: center;
   margin-left: 33vw;
   width: 50vw;
@@ -78,12 +77,6 @@
 }
 
 
-.showname{
-  position: absolute;
-  top: 1vh;
-  left: 2vw;
-  font-size: 30px;
-}
 
 .show_image{
 
@@ -102,13 +95,14 @@ position: absolute;
 top: 45vh;
 left: 16vw;
 font-size: 20px;
+
 }
 
 .showtext{
+  font-size: 40px;
   position: absolute;
   top: 10vh;
   left: 9vw;
-  font-size: 25px;
   // border:solid 1px #000000;
   width: 35vw;
   height: 30vh;

@@ -10,7 +10,6 @@
 
   <div class = "show_textparent">
 
-  <div class = "showname"><%= @tweet.name %></div>
   <div class = "show_datapa">
   <div class = "showdate"><%= @tweet.created_at %></div>
   <div class = "showtext"><%= simple_format(@tweet.text) %></div>
@@ -31,7 +30,8 @@
  </div>
   <div class = "showtop">
   <%# <p>詳細画面</p> %>
-  <%= @tweet.name %>の投稿
+    <%= @tweet.user.nickname %>の投稿
+
   </div>
  </head>
 
