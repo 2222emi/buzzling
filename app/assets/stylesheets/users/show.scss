@@ -41,7 +41,7 @@
   font-family: YuGothic,'Yu Gothic',sans-serif;
   font-size: medium;
   text-align: center;
-  top: 10vh;
+  top: 3vh;
   margin: 0 auto;
   width: 50%;
   background-color: #00acb5ec;
@@ -85,4 +85,17 @@ position: absolute;
 
 .user_parent1{
   margin-top: 140px;
+}
+
+.showkaminari a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.showkaminari{
+  margin-top: 10vh;
+  margin-left: 30vw;
+  margin-bottom: 4vh;
+  font-size: 1.5em;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
 }
