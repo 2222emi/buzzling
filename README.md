@@ -21,3 +21,4 @@
     <%= f.nickname_field :nickname, autofocus: true, autocomplete: "nickname" %>
   </div>
 
+&& current_user.id == tweet.user_id

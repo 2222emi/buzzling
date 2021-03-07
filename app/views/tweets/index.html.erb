@@ -4,21 +4,27 @@
  <div class = "tweetbody_parent">
   <% @tweets.each do |tweet| %>
   <div class = "tweetbody">
-  <div class = "editindex">
-  <%= link_to 'Edit', "/tweets/#{tweet.id}/edit", method: :get %>
-  </div>
-  <div class = "destroyindex">
-  <%= link_to 'Delete', "/tweets/#{tweet.id}", method: :delete %>
-  </div>
-  <div class = "showinndex">
-  <%= link_to 'Learn More', "/tweets/#{tweet.id}", method: :get %>
-  </div>
   <div class = "contents_image"style = "background-image: url(<%= tweet.image %>);"></div>
-  <div class = "tweetname"><%= tweet.name %></div>
+  <div class = "tweetname">
+  <a href = "/users/<%= tweet.user.id%>">
+  <%= tweet.user.nickname%>
+ </div>
   <div class = "tweetdate"><%= tweet.created_at %></div>
   <div class = "tweettext"><%= simple_format(tweet.text) %></div>
-  </div>
-  </div>
+ 
+
+  <% if user_signed_in? && current_user.id == tweet.user_id%>
+      <div class = "editindex">
+      <%= link_to 'Edit', "/tweets/#{tweet.id}/edit", method: :get %>
+      </div>
+      <div class = "destroyindex">
+      <%= link_to 'Delete', "/tweets/#{tweet.id}", method: :delete %>
+      </div>
+  <% end%>
+     <div class = "showinndex">
+      <%= link_to 'Learn More', "/tweets/#{tweet.id}", method: :get %>
+      </div>
+</div>
 <% end %>
 
  </body>
@@ -29,21 +35,20 @@
 <%# </div> %> 
 
 <% if user_signed_in? %>
-  <div class = "user_signed"><%= link_to "LogOut", destroy_user_session_path, method: :delete%>
-</div>
+  <div class = "user_signed"><%= link_to "LogOut", destroy_user_session_path, method: :delete%></div>
    <div class = "indexpost">
-<%= link_to 'NEW POST', 'tweets/new'%>
-</div>
-<div class = "userpage">
-<%= link_to 'MyPage', "/users/#{current_user.id}" %>
-</div>
-  <% else %>
+   <%= link_to 'NEW POST', 'tweets/new'%>
+   </div>
+   <div class = "userpage">
+   <%= link_to 'MyPage', "/users/#{current_user.id}" %>
+   </div>
+<% else %>
   <div class = "Log">
     <div class = "In"><%= link_to "LogIn", user_session_path, method: :post%>
     </div>
     <div class = "Up"><%= link_to "SignUp", new_user_registration_path, method: :get%>
     </div>
-    </div>
+  </div>
   <% end %>
 
 
