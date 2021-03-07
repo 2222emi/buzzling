@@ -2,7 +2,8 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
 def index 
-  @tweets = Tweet.includes(:user).order("created_at DESC").page(params[:page]).per(8)
+  @tweets = Tweet.includes(:user).order("created_at DESC")
+  @tweets = Kaminari.paginate_array(@tweets).page(params[:page]).per(4)
 end
  
 def new
