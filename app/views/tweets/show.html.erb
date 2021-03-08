@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
 <div class = "showcomment">
 <% if current_user%>
@@ -33,6 +33,16 @@
 
 </div>
 
+<% @comments.each do |comment| %>
+<div class = "comments_box">
+<div class = "commenter"><%= comment.user.nickname %></div>
+<div class = "comment_date"><%= comment.created_at %></div>
+<div class = "comment_text"><%= comment.text %></div>
+</div>
+
+<% end %>
+
+</div>
 </body>
 
 <head>
