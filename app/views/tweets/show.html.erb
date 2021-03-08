@@ -2,24 +2,37 @@
 <html>
 
  <body>
-  <div class = "bodycoler">
+<div class = "bodycoler">
   <div class = "showbody_parent">
-  <div class = "show_imageparent">
-    <div class = "show_image"style = "background-image: url(<%= @tweet.image %>);"></div>
+    <div class = "show_imageparent">
+      <div class = "show_image"style = "background-image: url(<%= @tweet.image %>);"></div>
+    </div>
+
+    <div class = "show_textparent">
+
+      <div class = "show_datapa">
+        <div class = "showdate"><%= @tweet.created_at %></div>
+        <div class = "showtext"><%= simple_format(@tweet.text) %></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-  <div class = "show_textparent">
+<div class = "showcomment">
+<% if current_user%>
+<%=form_with(model: [@tweet,@comment],local: true) do |form|%>
+<%= form.text_area :text %>
+<%= form.submit "投稿する" %>
+<% end %>
 
-  <div class = "show_datapa">
-  <div class = "showdate"><%= @tweet.created_at %></div>
-  <div class = "showtext"><%= simple_format(@tweet.text) %></div>
-  </div>
+<% else %>
 
-  </div>
-  </div>
-<%# <div class = "show_bottom"></div> %>
+<p>roguinngahituyou</p>
+
+<% end %>
 
 </div>
+
 </body>
 
 <head>
