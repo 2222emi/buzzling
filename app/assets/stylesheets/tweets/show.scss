@@ -67,12 +67,12 @@
 .show_textparent{
   position: relative;
   font-family: YuGothic,'Yu Gothic',sans-serif;
-  text-align: center;
+  // text-align: center;
   margin-left: 33vw;
-  width: 50vw;
+  width: 30vw;
   background-color: #00acb5ec;
   border-radius: 15px;
-  height: 50vh;
+  height: 40vh;
   margin-top: 30vh;
 }
 
@@ -92,22 +92,37 @@
 
 .showdate{
 position: absolute;
-top: 45vh;
-left: 16vw;
-font-size: 20px;
-
+top: 33vh;
+// left: 8.8vw;
+font-size: 15px;
+width: 30vw;
+text-align: center;
 }
 
 .showtext{
-  font-size: 40px;
+  font-size: 34px;
   position: absolute;
-  top: 10vh;
-  left: 9vw;
+  top: 7vh;
+  text-align: center;
+  // left: 4vw;
   // border:solid 1px #000000;
-  width: 35vw;
+  width: 30vw;
   height: 30vh;
-
 }
+
+.comments_box{
+  width: 27vw;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  color: #757575;
+  position: absolute;
+  top: 63vh;
+  left: 12vw;
+}
+
+.commenter{
+}
+
 
 
 // .show_bottom{
@@ -116,3 +131,4 @@ font-size: 20px;
 //   height: 10vh;
 //   bottom: 0;
 // }
+

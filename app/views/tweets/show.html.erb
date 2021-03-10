@@ -1,5 +1,3 @@
-<!DOCTYPE HTML>
-<html>
 
  <body>
 <div class = "bodycoler">
@@ -18,31 +16,27 @@
   </div>
 
 
-<div class = "showcomment">
-<% if current_user%>
-<%=form_with(model: [@tweet,@comment],local: true) do |form|%>
-<%= form.text_area :text %>
-<%= form.submit "投稿する" %>
-<% end %>
-
-<% else %>
-
-<p>roguinngahituyou</p>
-
-<% end %>
-
-</div>
+  <div class = "showcomment">
+   <% if current_user%>
+    <%=form_with(model: [@tweet,@comment],local: true) do |form|%>
+    <%= form.text_area :text %>
+    <%= form.submit "投稿する" %>
+    <% end %>
+   <% else %>
+    <p>roguinngahituyou</p>
+   <% end %>
+  </div>
 
 <% @comments.each do |comment| %>
 <div class = "comments_box">
-<div class = "commenter"><%= comment.user.nickname %></div>
-<div class = "comment_date"><%= comment.created_at %></div>
-<div class = "comment_text"><%= comment.text %></div>
+  <div class = "commenter"><%= comment.user.nickname %></div>
+  <div class = "comment_date"><%= comment.created_at %></div>
+  <div class = "comment_text"><%= comment.text %></div>
 </div>
-
 <% end %>
 
 </div>
+
 </body>
 
 <head>
