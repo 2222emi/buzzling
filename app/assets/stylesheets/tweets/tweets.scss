@@ -110,7 +110,7 @@ color: #ffffff;
 .tweettext{
   top: 100px;
   background-color: #303841ce;
-  // border-radius: 15px;
+  border-radius: 15px;
   position: absolute;
   padding: 10px;
   width: 25vw;
@@ -168,7 +168,7 @@ position: absolute;
   font-family: YuGothic,'Yu Gothic',sans-serif;
   text-decoration: none;
   color: #757575;
-  margin-left: 63vw;
+  margin-left: 10vw;
   top: 5vh;
   position: absolute;
 }
@@ -204,4 +204,41 @@ margin-left: 30vw;
 margin-bottom: 4vh;
 font-size: 1.5em;
 font-family: YuGothic,'Yu Gothic',sans-serif;
+}
+
+.search{
+
+  position: absolute;
+  left: 60vw;
+  top: 1vh;
+  width: 30vw;
+  height: 10vh;
+  background-color: #ff56229a;
+  border-radius: 15px;
+
+    // border:solid 1px #000;
+}
+
+.search p{
+display: block;
+margin-left: 1.5vw;
+position: relative;
+}
+
+.search-input{
+  position: absolute;
+  width: 18vw;
+  height: 2.5vh;
+  top: 4vh;
+  left: 1.5vw;
+}
+
+.search-btn{
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  width: 6px;
+  height: 2.2vh;
+  top: 4.2vh;
+  left: 21vw;
 }

@@ -44,6 +44,10 @@ def show
   
 end
 
+def search
+  @tweets = Tweet.search(params[:search])
+end
+
 end
 
 private
