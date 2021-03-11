@@ -5,11 +5,14 @@ Rails.application.routes.draw do
 
   resources :tweets do
    resources :comments
+  collection do
+    get 'search'
+  end
   end
 
-  resources :users do
-   get :search, on: :collection
-  end
-  
+  resources :users 
+   
+
+
 end
 
