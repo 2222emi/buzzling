@@ -38,12 +38,12 @@
 <%= link_to 'NEW POST', 'tweets/new'%>
 <%# </div> %> 
   <div class = "search">
-<p>検索</p>
- <%= form_with url: search_users_path, local: true do |form|%>
-  <%= form.text_field :keyword, placeholder: "keyword", class: "search-input" %>
-  <%= form.submit "search", class: "search-btn" %>
- <% end %>
-</div>
+    <p>検索</p>
+   <%= form_with url: search_tweets_path, local: true, method: :get do |form|%>
+    <%= form.text_field :keyword, placeholder: "keyword", class: "search-input" %>
+    <%= form.submit "search", class: "search-btn" %>
+   <% end %>
+  </div>
 
 <% if user_signed_in? %>
   <div class = "user_signed"><%= link_to "LogOut", destroy_user_session_path, method: :delete%></div>

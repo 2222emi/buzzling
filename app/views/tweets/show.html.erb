@@ -1,6 +1,7 @@
 
  <body>
 <div class = "bodycoler">
+
   <div class = "showbody_parent">
     <div class = "show_imageparent">
       <div class = "show_image"style = "background-image: url(<%= @tweet.image %>);"></div>
@@ -16,27 +17,29 @@
   </div>
 
 
-  <div class = "showcomment">
-   <% if current_user%>
+<div class = "showcomment">
+  <% if current_user%>
     <%=form_with(model: [@tweet,@comment],local: true) do |form|%>
-    <%= form.text_area :text %>
-    <%= form.submit "投稿する" %>
-    <% end %>
-   <% else %>
-    <p>roguinngahituyou</p>
-   <% end %>
-  </div>
-
-<% @comments.each do |comment| %>
-<div class = "comments_box">
-  <div class = "commenter"><%= comment.user.nickname %></div>
-  <div class = "comment_date"><%= comment.created_at %></div>
-  <div class = "comment_text"><%= comment.text %></div>
-</div>
-<% end %>
-
+    <%= form.text_area :text,class: "comment_area" %>
+    <%= form.submit "投稿する", class: "comment_submit" %>
+  <% end %>
+  <% else %>
+    <p>ログインはお済みですか？</p>
+  <% end %>
 </div>
 
+<div class = "comments_box_parent">
+  <% @comments.each do |comment| %>
+    <div class = "comments_box">
+      <div class = "commenter"><%= comment.user.nickname %>
+        <div class = "comment_date"><%= comment.created_at %></div></div>
+      <div class = "comment_text"><%= comment.text %></div>
+    </div>
+  <% end %>
+</div>
+
+
+</div>
 </body>
 
 <head>

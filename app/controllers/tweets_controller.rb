@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
 def index 
   @tweets = Tweet.includes(:user).order("created_at DESC")
@@ -45,7 +45,7 @@ def show
 end
 
 def search
-  @tweets = Tweet.search(params[:search])
+  @tweets = Tweet.search(params[:keyword])
 end
 
 end

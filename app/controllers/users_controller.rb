@@ -8,4 +8,8 @@ class UsersController < ApplicationController
 
   end
   
+  # def search
+  #   @user = User.search(params[:keyword])
+  # end
+
 end

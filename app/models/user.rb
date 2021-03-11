@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :tweets
-  belongs_to :comment
+  belongs_to :comment, optional: true
   
+  
+
 end

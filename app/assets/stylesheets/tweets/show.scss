@@ -110,20 +110,41 @@ text-align: center;
   height: 30vh;
 }
 
+.comments_box_parent{
+  position: absolute;
+  top: 74vh;
+  left: 44vw;
+  font-size: 16px;
+}
 .comments_box{
-  width: 27vw;
+ 
   background-color: #eeeeee;
   border-radius: 15px;
   color: #757575;
-  position: absolute;
-  top: 63vh;
-  left: 12vw;
+  width: 27vw;
+  height: 10vh;
+  margin-bottom: 2vh;
 }
 
 .commenter{
+  
 }
 
+.comment_area{
+  border-radius: 10px;
+  border: solid 1px #7575753d;
 
+  width: 23vw;
+  height: 20vh;
+}
+.showcomment{
+  position: absolute;
+  top: 33vh;
+  left: 75vw;
+}
+.comment_submit{
+
+}
 
 // .show_bottom{
 //   background-color: #03686d69;
