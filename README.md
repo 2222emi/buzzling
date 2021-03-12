@@ -7,7 +7,10 @@
 さらなる技術力向上を目指して
 
 ## 開発環境
-・MacOS(catalina 10.15.7)
+・MacOS(catalina 10.15.7)<br>
+・VScode ver 1.53.2<br>
+・DB MYSQL<br>
+
 ## 開発言語
 | 開発言語 | バージョン  |
 |:-------:|:---------:|
@@ -17,9 +20,8 @@
 | css     |           |
 
 
-DB MYSQL
-使用エディタ VScode ver 1.53.2
-Git
+
+
 
 ## DEMO
 <img width="1440" alt="buztop" src="https://user-images.githubusercontent.com/74222306/110944725-2b461d80-8380-11eb-8094-aee709555f11.png">
