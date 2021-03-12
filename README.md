@@ -19,7 +19,7 @@ DB MYSQL
 Git
 
 ## DEMO
-![トップページ](/img/buztop.png)
+![トップページ](/image/buztop.png)
 ## DB設計
 
 ## 実装機能
