@@ -19,7 +19,8 @@ DB MYSQL
 Git
 
 ## DEMO
-![トップページ](/image/buztop.png)
+![トップページ](/<img width="1440" alt="buztop" src="https://user-images.githubusercontent.com/74222306/110944725-2b461d80-8380-11eb-8094-aee709555f11.png">)
+
 ## DB設計
 
 ## 実装機能
