@@ -15,6 +15,8 @@
 | rails   | 5.2.3     |
 | html    |           |
 | css     |           |
+
+
 DB MYSQL
 使用エディタ VScode ver 1.53.2
 Git
