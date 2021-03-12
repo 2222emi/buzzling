@@ -33,6 +33,19 @@
 | image | text | null:ture |
 | user_id | integer | null:ture |
 
+### usersテーブル
+| Column | Type | Options |
+| :-----:|:----:|:-------:|
+| nickname | verchar | null:ture |
+
+### commentsテーブル
+| Column | Type | Options |
+| :-----:|:----:|:-------:|
+| text | text | null:ture |
+| user_id | integer | null:ture |
+| tweet_id | integer | null:ture |
+
+
 ## 実装機能
 ・新規投稿機能(投稿者のみ可能)<br>
 ・投稿削除機能(投稿者のみ可能)<br>
