@@ -13,7 +13,17 @@
 ・DB MYSQL<br>
 
 ## 開発言語
+| 開発言語 | バージョン  |
+|:-------:|:---------:|
+| ruby    | 2.5.1     |
+| rails   | 5.2.3     |
+| html    |           |
+| css     |           |
 
+## DEMO
+<img width="1440" alt="buztop" src="https://user-images.githubusercontent.com/74222306/110944725-2b461d80-8380-11eb-8094-aee709555f11.png">
+
+## DB設計
 ### tweetsテーブル
 | Column | Type | Options |
 |:------:|:----:|:-------:|
@@ -21,16 +31,6 @@
 | image | text | null:ture |
 | user_id | integer | null:ture |
 
-
-
-
-
-
-## DEMO
-<img width="1440" alt="buztop" src="https://user-images.githubusercontent.com/74222306/110944725-2b461d80-8380-11eb-8094-aee709555f11.png">
-
-## DB設計
-|  | バージョン  |
 ## 実装機能
 ・新規投稿機能(投稿者のみ可能)<br>
 ・投稿削除機能(投稿者のみ可能)<br>
