@@ -21,7 +21,7 @@
 | css     |           |
 
 ## DEMO
-<img width="1440" alt="スクリーンショット 2021-03-12 16 16 40" src="https://user-images.githubusercontent.com/74222306/111023809-6ac34700-841e-11eb-8b5a-7636bc8f589f.png">
+<img width="1440" alt="スクリーンショット 2021-03-13 17 05 22" src="https://user-images.githubusercontent.com/74222306/111023849-aa8a2e80-841e-11eb-93be-39c15f872006.png">
 <img width="1441" alt="スクリーンショット 2021-03-12 16 12 25" src="https://user-images.githubusercontent.com/74222306/110948341-92fe6780-8384-11eb-9119-cf72be85cbbb.png">
 <img width="1440" alt="スクリーンショット 2021-03-12 16 16 40" src="https://user-images.githubusercontent.com/74222306/110948472-b7f2da80-8384-11eb-8e3f-898032a212ba.png">
 
